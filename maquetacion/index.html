@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilos.css">
+  <title>App Películas</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="top-bar"></div>
+  <div class="container">
+    <header class="header row">
+      <div class="col-xs-2 visible-xs">
+        <div class="bars collapsed" data-toggle="collapse" href="#menu-principal">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+      <div class="nombre-app col-xs-10 col-sm-3 text-right">
+        <h1>Mis películas</h1>
+      </div>
+      <ul class="menu-principal col-xs-12 col-sm-9 list-unstyled collapse" id="menu-principal">
+        <li>
+          <a href="/">Listado de películas</a>
+        </li>
+        <li>
+          <a href="#" data-toggle="collapse" class="collapse" href="#formulario">Añadir película</a>
+        </li>
+        <li>
+          <a href="#">Ayuda</a>
+        </li>
+        <li>
+          <a href="#">Cerrar sesión</a>
+        </li>
+      </ul>
+    </header>
+    <section class="titulo row">
+      <h2 class="col-xs-9">Listado</h2>
+    </section>
+    <section class="listados">
+      <header class="header-listados row js-cabecera-pendientes">
+        <div class="col-xs-9">
+          <h3>Pendientes de ver</h3>
+          <p>Tienes <span class="js-n-peliculas-pendientes">4</span> películas pendientes de ver</p>
+        </div>
+      </header>
+      <ul class="lista-pelis lista-pendientes collapse in row list-unstyled js-lista-pendientes">
+        <li class="col-xs-12 col-md-6 col-lg-3 js-pelicula">
+          <div class="row">
+            <div class="cartel col-xs-4">
+              <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png"
+                alt="Déjame salir" title="Déjame salir">
+            </div>
+            <div class="datos col-xs-8">
+              <h4>Déjame salir</h4>
+              <span class="director">Jordan Peele
+                <span class="anyo">(2017)</span>
+              </span>
+              <ul class="puntuacion list-inline">
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="1/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="2/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="3/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="4/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="5/5"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="col-xs-12 col-md-6 col-lg-3 js-pelicula">
+          <div class="row">
+            <div class="cartel col-xs-4">
+              <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png"
+                alt="Déjame salir" title="Déjame salir">
+            </div>
+            <div class="datos col-xs-8">
+              <h4>Déjame salir</h4>
+              <span class="director">Jordan Peele
+                <span class="anyo">(2017)</span>
+              </span>
+              <ul class="puntuacion list-inline">
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="1/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="2/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="3/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="4/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="5/5"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="col-xs-12 col-md-6 col-lg-3 js-pelicula">
+          <div class="row">
+            <div class="cartel col-xs-4">
+              <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png"
+                alt="Déjame salir" title="Déjame salir">
+            </div>
+            <div class="datos col-xs-8">
+              <h4>Déjame salir</h4>
+              <span class="director">Jordan Peele
+                <span class="anyo">(2017)</span>
+              </span>
+              <ul class="puntuacion list-inline">
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="1/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="2/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="3/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="4/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="5/5"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="col-xs-12 col-md-6 col-lg-3 js-pelicula">
+          <div class="row">
+            <div class="cartel col-xs-4">
+              <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png"
+                alt="Déjame salir" title="Déjame salir">
+            </div>
+            <div class="datos col-xs-8">
+              <h4>Déjame salir</h4>
+              <span class="director">Jordan Peele
+                <span class="anyo">(2017)</span>
+              </span>
+              <ul class="puntuacion list-inline">
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="1/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="2/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="3/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="4/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="5/5"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <header class="header-listados row js-cabecera-vistas">
+        <div class="col-xs-9">
+          <h3>Vistas</h3>
+          <p class="js-hay-peliculas">Has visto <span class="js-n-peliculas-vistas">4</span> películas</p>
+        </div>
+        <div class="despliega-listado col-xs-3 hidden-lg">
+          <i class="icono-circular icono-desplegar fa fa-caret-up pull-right collapsed" data-toggle="collapse"
+            href="#lista-vistas"></i>
+        </div>
+      </header>
+      <ul class="lista-pelis lista-vistas collapse row list-unstyled js-lista-vistas">
+        <li class="col-xs-12 col-md-6 col-lg-3 js-pelicula">
+          <div class="row">
+            <div class="cartel col-xs-4">
+              <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png"
+                alt="Déjame salir" title="Déjame salir">
+            </div>
+            <div class="datos col-xs-8">
+              <h4>Déjame salir</h4>
+              <span class="director">Jordan Peele
+                <span class="anyo">(2017)</span>
+              </span>
+              <ul class="puntuacion list-inline" data-puntos="5">
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star" title="1/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star" title="2/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star" title="3/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star" title="4/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star" title="5/5"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="col-xs-12 col-md-6 col-lg-3 js-pelicula">
+          <div class="row">
+            <div class="cartel col-xs-4">
+              <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png"
+                alt="Déjame salir" title="Déjame salir">
+            </div>
+            <div class="datos col-xs-8">
+              <h4>Déjame salir</h4>
+              <span class="director">Jordan Peele
+                <span class="anyo">(2017)</span>
+              </span>
+              <ul class="puntuacion list-inline" data-puntos="5">
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star" title="1/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star" title="2/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star" title="3/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star" title="4/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="5/5"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="col-xs-12 col-md-6 col-lg-3 js-pelicula js-pelicula-base">
+          <div class="row">
+            <div class="cartel col-xs-4">
+              <img class="img-responsive js-cartel"
+                src="https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png"
+                alt="Las vidas posibles de Mr. Nobody" title="Las vidas posibles de Mr. Nobody">
+              <i class="glyphicon glyphicon-certificate js-oscars" title="Óscars"></i>
+              <i class="fa fa-digital-tachograph hide js-formato-vhs" title="VHS"></i>
+              <i class="fa fa-compact-disc hide js-formato-dvd" title="DVD"></i>
+              <i class="fa fa-file-video hide js-formato-archivo" title="Archivo"></i>
+            </div>
+            <div class="datos col-xs-8">
+              <h4 class="js-titulo">Déjame salir</h4>
+              <span class="director"><span class="js-director">Jordan Peele</span>
+                <span class="anyo">(<span class="js-anyo">2017</span>)</span>
+              </span>
+              <ul class="puntuacion list-inline js-valoracion" data-puntos="3">
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star js-valoracion-1" title="1/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star js-valoracion-2" title="2/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star js-valoracion-3" title="3/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty js-valoracion-4" title="4/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty js-valoracion-5" title="5/5"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="col-xs-12 col-md-6 col-lg-3 js-pelicula">
+          <div class="row">
+            <div class="cartel col-xs-4">
+              <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png"
+                alt="Múltiple" title="Múltiple">
+            </div>
+            <div class="datos col-xs-8">
+              <h4>Déjame salir</h4>
+              <span class="director">Jordan Peele
+                <span class="anyo">(2016)</span>
+              </span>
+              <ul class="puntuacion list-inline" data-puntos="1">
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star" title="1/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="2/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="3/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="4/5"></i>
+                </li>
+                <li class="estrella">
+                  <i class="glyphicon glyphicon-star-empty" title="5/5"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="titulo row">
+      <h2 class="col-xs-9">Estadísticas</h2>
+    </section>
+    <section class="estadisticas row">
+      <header class="header-listados col-xs-4">
+        Película mejor valorada
+      </header>
+      <header class="header-listados col-xs-4">
+        Película con más óscars
+      </header>
+      <header class="header-listados col-xs-4">
+        Película más reciente
+      </header>
+      <div class="lista-pelis col-xs-4 js-mejor-valorada">
+        <div class="row">
+          <div class="cartel col-xs-4">
+            <img class="img-responsive js-cartel"
+              src="https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png" alt="Déjame salir"
+              title="Déjame salir">
+          </div>
+          <h4 class="js-titulo">Déjame salir</h4>
+        </div>
+      </div>
+      <div class="lista-pelis col-xs-4 js-mas-oscars">
+        <div class="row">
+          <div class="cartel col-xs-4">
+            <img class="img-responsive js-cartel"
+              src="https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png" alt="Déjame salir"
+              title="Déjame salir">
+          </div>
+          <h4 class="js-titulo">Déjame salir</h4>
+        </div>
+      </div>
+      <div class="lista-pelis col-xs-4 js-mas-reciente">
+        <div class="row">
+          <div class="cartel col-xs-4">
+            <img class="img-responsive js-cartel"
+              src="https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png" alt="Déjame salir"
+              title="Déjame salir">
+          </div>
+          <h4 class="js-titulo">Déjame salir</h4>
+        </div>
+      </div>
+    </section>
+    <section class="titulo row">
+      <h2 class="col-xs-9">Directores</h2>
+    </section>
+    <section class="directores row">
+      <ul class="col-xs-12 list-unstyled js-lista-directores">
+        <li class="js-director-base">
+          <h5 class="js-director">Jordan Peele</h5>
+          <ul class="js-lista-peliculas-directores">
+            <li class="js-pelicula-director-base"><span class="js-titulo">Déjame salir</span> (<span
+                class="js-anyo">2017</span>)</li>
+            <li>Déjame salir (2017)</li>
+          </ul>
+        </li>
+        <li>
+          <h5>Jordan Peele</h5>
+          <ul>
+            <li>Déjame salir (2017)</li>
+          </ul>
+        </li>
+        <li>
+          <h5>Jordan Peele</h5>
+          <ul>
+            <li>Déjame salir (2017)</li>
+            <li>Déjame salir (2017)</li>
+          </ul>
+        </li>
+        <li>
+          <h5>Jordan Peele</h5>
+          <ul>
+            <li>Déjame salir (2017)</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+{
+  "peliculas": [
+    {
+      "id": 1,
+      "titulo": "Fantastic Mr. Fox",
+      "director": "Wes Anderson",
+      "fecha": "14-10-2009",
+      "cartel": "https://images-na.ssl-images-amazon.com/images/I/515cCzEhUIL.jpg",
+      "vista": false,
+      "formato": "DVD",
+      "valoracion": 0,
+      "oscars": 0
+    },
+    {
+      "id": 2,
+      "titulo": "El sexto sentido",
+      "director": "M. Night Shyamalan",
+      "fecha": "02-08-1999",
+      "cartel": "https://images-na.ssl-images-amazon.com/images/I/71KuBNMPc3L._SY445_.jpg",
+      "vista": false,
+      "formato": "archivo",
+      "oscars": 0,
+      "valoracion": 0
+    },
+    {
+      "id": 3,
+      "titulo": "Alguien voló sobre el nido del cuco",
+      "director": "Milos Forman",
+      "fecha": "19-11-1975",
+      "cartel": "http://img.aullidos.com/imagenes/caratulas/alguien-volo-sobre-el-nido-del-cuco.jpg",
+      "vista": false,
+      "formato": "VHS",
+      "oscars": 5,
+      "valoracion": 0
+    },
+    {
+      "id": 4,
+      "titulo": "Desafío total",
+      "director": "Paul Verhoeven",
+      "fecha": "31-05-1990",
+      "cartel": "https://www.elseptimoarte.net/carteles/desafio_total_3773.jpg",
+      "vista": false,
+      "formato": "VHS",
+      "oscars": 0,
+      "valoracion": 0
+    },
+    {
+      "id": 5,
+      "titulo": "Seven (Se7en)",
+      "director": "David Fincher",
+      "fecha": "15-09-1995",
+      "cartel": "https://3.bp.blogspot.com/-NpcWr8ZfAs4/T9t6sER_SQI/AAAAAAAAMwk/5mGFR5R_8t8/s275/seven.jpg",
+      "vista": true,
+      "formato": "archivo",
+      "oscars": 0,
+      "valoracion": 4
+    },
+    {
+      "id": 6,
+      "titulo": "Cómo ser John Malkovich",
+      "director": "Spike Jonze",
+      "fecha": "02-09-1999",
+      "cartel": "https://images-na.ssl-images-amazon.com/images/M/MV5BYmUxY2MyOTQtYjRlMi00ZWEwLTkzODctZDMxNDcyNTFhYjNjXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_UY268_CR3,0,182,268_AL_.jpg",
+      "vista": true,
+      "formato": "DVD",
+      "oscars": 0,
+      "valoracion": 5
+    },
+    {
+      "id": 7,
+      "titulo": "Las vidas posibles de Mr. Nobody",
+      "director": "Jaco Van Dormael",
+      "fecha": "11-09-2009",
+      "cartel": "http://cetr.net/wp-content/uploads/2017/09/mr_nobody_23190.jpg",
+      "vista": true,
+      "formato": "archivo",
+      "oscars": 0,
+      "valoracion": 3
+    },
+    {
+      "id": 8,
+      "titulo": "Múltiple",
+      "director": "M. Night Shyamalan",
+      "fecha": "26-09-2016",
+      "cartel": "http://es.web.img2.acsta.net/c_215_290/pictures/16/11/30/17/12/481084.jpg",
+      "vista": true,
+      "formato": "DVD",
+      "oscars": 0,
+      "valoracion": 1
+    },
+    {
+      "id": 9,
+      "titulo": "Déjame salir",
+      "director": "Jordan Peele",
+      "fecha": "26-09-2016",
+      "cartel": "https://upload.wikimedia.org/wikipedia/en/a/a3/Get_Out_poster.png",
+      "vista": true,
+      "formato": "DVD",
+      "oscars": 1,
+      "valoracion": 4
+    },
+    {
+      "id": 10,
+      "titulo": "The Game",
+      "director": "David Fincher",
+      "fecha": "12-09-1997",
+      "cartel": "https://images-na.ssl-images-amazon.com/images/I/61G7OZte8QL._SY550_.jpg",
+      "vista": false,
+      "formato": "archivo",
+      "oscars": 0,
+      "valoracion": 0
+    }
+  ]
+}

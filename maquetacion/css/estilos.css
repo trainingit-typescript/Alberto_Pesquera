@@ -1,0 +1,269 @@
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #fff; }
+p {
+  margin: 0; }
+
+h1, h2, h3, h4 {
+  margin: 0; }
+
+.bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 19px;
+  width: 25px; }
+  .bars .bar {
+    height: 3px;
+    background-color: #000;
+    border-radius: 30px;
+    transition: all 0.2s; }
+    .bars .bar:first-child {
+      transform: translateY(8px) rotate(45deg); }
+    .bars .bar:nth-child(2) {
+      opacity: 0; }
+    .bars .bar:last-child {
+      transform: translateY(-8px) rotate(-45deg); }
+  .bars.collapsed .bar:first-child, .bars.collapsed .bar:last-child {
+    transform: translateY(0) rotate(0); }
+  .bars.collapsed .bar:nth-child(2) {
+    opacity: 1; }
+
+.icono-circular {
+  background-color: #00695c;
+  border-radius: 50%;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.icono-anyadir {
+  font-size: 1.2em; }
+  .icono-anyadir:before {
+    margin-top: 1px; }
+
+.icono-desplegar {
+  font-size: 2em;
+  transition: transform 0.1s linear; }
+  .icono-desplegar:before {
+    margin-top: -5px; }
+  .icono-desplegar.collapsed {
+    transform: rotate(180deg); }
+  .anyade-pelicula .collapsed .fa-plus {
+          display: flex !important;
+      }
+  .anyade-pelicula .collapsed .fa-minus {
+          display: none;
+      }
+
+/*i {
+  cursor: pointer; }*/
+
+.top-bar {
+  background-color: #cc8006;
+  height: 15px; }
+
+.header {
+  background-color: #f9a825;
+  color: #000;
+  min-height: 60px; }
+  .header i {
+    font-size: 1.8em;
+    line-height: 60px; }
+  .header h1 {
+    font-size: 2.25rem;
+    line-height: 60px; }
+    @media (min-width: 768px) {
+      .header h1 {
+        line-height: 100px; } }
+  .header .bars {
+    margin-top: 20px; }
+  @media (min-width: 768px) {
+    .header .nombre-app {
+      text-align: left; } }
+
+.titulo {
+  background-color: #00695c;
+  color: #fff;
+  z-index: 1000;
+  position: relative;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+  .titulo h2 {
+    font-size: 1.6rem;
+    line-height: 2.5; }
+  .titulo .icono-circular {
+    background-color: #f9a825;
+    position: relative;
+    top: 10px;
+    color: #000;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2); }
+
+.listados h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px; }
+
+.header-listados {
+  background-color: #eee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  position: relative; }
+  .header-listados p {
+    margin: 0;
+    font-size: 1.25rem; }
+
+.lista-pelis {
+  margin-bottom: 0; }
+  .lista-pelis > li, .estadisticas .lista-pelis {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative; }
+    .estadisticas .lista-pelis {
+      border-bottom: none;
+    }
+    .lista-pelis > li .opciones {
+      position: absolute;
+      right: 15px;
+      top: 10px; }
+      .lista-pelis > li .opciones i {
+        opacity: 1;
+        font-size: 1.8rem; }
+        .lista-pelis > li .opciones i.collapsed {
+          opacity: 0.5; }
+      .lista-pelis > li .opciones .submenu-pelicula {
+        background-color: #fff;
+        position: absolute;
+        right: 25px;
+        top: 0;
+        width: 220px;
+        margin: 0;
+        font-size: 1.3rem;
+        box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
+        .lista-pelis > li .opciones .submenu-pelicula li {
+          padding: 10px; }
+          .lista-pelis > li .opciones .submenu-pelicula li:hover {
+            background-color: #eee; }
+          .lista-pelis > li .opciones .submenu-pelicula li a {
+            color: inherit; }
+            .lista-pelis > li .opciones .submenu-pelicula li a:hover, .lista-pelis > li .opciones .submenu-pelicula li a:active {
+              text-decoration: none; }
+    @media (min-width: 992px) {
+      .lista-pelis > li {
+        border: 0; }
+        .lista-pelis > li > .row {
+          height: 120px; } }
+    @media (min-width: 1200px) {
+      .lista-pelis > li .datos {
+        border-right: 1px solid #ccc;
+        height: 100%; } }
+    @media (min-width: 992px) {
+      .lista-pelis > li:nth-child(odd) .datos {
+        border-right: 1px solid #ccc;
+        height: 100%; } }
+    @media (min-width: 1200px) {
+      .lista-pelis > li:last-child .datos {
+        border-right: 0; } }
+  .lista-pelis h4 {
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    padding-right: 15px;
+    height: 36px;
+  }
+  .lista-pelis .puntuacion {
+    margin-top: 10px; }
+    .lista-pelis .puntuacion[data-puntos="4"] .estrella i, .lista-pelis .puntuacion[data-puntos="5"] .estrella i {
+      color: #090; }
+    .lista-pelis .puntuacion[data-puntos="2"] .estrella i, .lista-pelis .puntuacion[data-puntos="3"] .estrella i {
+      color: #cc0; }
+    .lista-pelis .puntuacion[data-puntos="0"] .estrella i, .lista-pelis .puntuacion[data-puntos="1"] .estrella i {
+      color: #f00; }
+    .lista-pelis .puntuacion .estrella {
+      font-size: 2.9rem;
+      padding: 0 2px; }
+      @media (min-width: 1200px) {
+        .lista-pelis .puntuacion .estrella {
+          font-size: 2rem; } }
+  @media (min-width: 1200px) {
+    .lista-pelis {
+      display: block; } }
+
+.menu-principal {
+  position: relative;
+  margin: 0; }
+  .menu-principal li {
+    margin: 0 -15px;
+    padding: 0 15px;
+    border-top: 1px solid #ccc;
+    line-height: 50px;
+    font-size: 1.4rem; }
+    .menu-principal li:last-child {
+      border-bottom: 1px solid #ccc; }
+    .menu-principal li:hover {
+      background-color: #cc8006; }
+    .menu-principal li a {
+      color: #fff; }
+      .menu-principal li a:hover, .menu-principal li a:active, .menu-principal li a:focus {
+        text-decoration: none; }
+      @media (min-width: 768px) {
+        .menu-principal li a {
+          color: #000; } }
+    @media (min-width: 768px) {
+      .menu-principal li {
+        display: inline-block;
+        border: 0;
+        margin: 0 10px;
+        padding: 0;
+        font-size: 1.5rem;
+        line-height: 100px; }
+        .menu-principal li:last-child {
+          border: 0; } }
+  @media (max-width: 767px) {
+    .menu-principal {
+      background-color: #815104; } }
+  @media (min-width: 768px) {
+    .menu-principal {
+      display: block;
+      text-align: right; } }
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+.formulario.panel {
+    margin-bottom: 0;
+}
+.footer {
+  background-color: #00695c;
+  color: #fff;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem; }
+  .footer.fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+.cartel i {
+    position: absolute;
+    bottom: -5px;
+    top: auto;
+    font-size: 26px;
+    color: #dfca4e;
+}
+.cartel i.js-oscars {
+  text-shadow: 1px 1px 1px #000;
+  right: 8px;
+}
+.cartel i[class*="js-formato"] {
+  left: 8px;
+}
